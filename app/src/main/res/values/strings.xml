@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ncamera</string>
+
+    <string name="disc">Ncamera is de mooiste en simpelste camera app die
+        er is met een mooie  en handige ui die te begrijpen is voor alle leeftijden</string>
+    <string name="meerinfo"> Ncamera is gemaakt door Najdere Joseph Terlien in 2018,
+    Ncamera biedt een heel simpele en mooie ui.
+    </string>
+
+    <string name="toegang">
+        Ncamera heeft uw toestemming nodig om de camera functies te gebruiken.
+    </string>
+
+</resources>

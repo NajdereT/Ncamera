@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".CamActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mb_blue"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/cardview_light_background" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/flb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:onClick="scan"
+            android:text="scanner"
+            android:textColor="@android:color/white"
+            app:fButtonColor="@color/fbutton_color_peter_river"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            fbutton:cornerRadius="5dp"
+            fbutton:shadowColor="@color/mb_blue_dark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            tools:layout_editor_absoluteY="480dp" />
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/flb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:onClick="cam"
+            android:text="camera"
+            android:textColor="@android:color/white"
+            app:fButtonColor="@color/fbutton_color_peter_river"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            fbutton:cornerRadius="5dp"
+            fbutton:shadowColor="@color/mb_blue_dark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            tools:layout_editor_absoluteY="480dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/flb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:onClick="ar"
+            android:text="AR"
+            android:textColor="@android:color/white"
+            app:fButtonColor="@color/fbutton_color_peter_river"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            fbutton:cornerRadius="5dp"
+            fbutton:shadowColor="@color/mb_blue_dark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            tools:layout_editor_absoluteY="480dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Functies"
+            android:textColor="@color/mb_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/po_image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@android:color/darker_gray"
+            app:allow_random_color="false"
+            app:btn_color="@color/fbutton_color_peter_river"
+            app:btn_fill_color="@android:color/holo_green_dark"
+            app:siShape="@raw/smile" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="Laat ons weten of je de app goed vind !"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:onClick="info"
+        app:backgroundTint="@color/mb_blue"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        fbutton:srcCompat="@drawable/search_flat_icon" />
+
+
+</android.support.constraint.ConstraintLayout>
